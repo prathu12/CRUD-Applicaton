@@ -1,0 +1,27 @@
+<div>
+    <h2><i>CRUD BY PRATHAMESH</i></h2>
+<table class="table table-hover text-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>COURSE</th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of Users">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.course}}</td>
+            <td>
+                <i (click)="_send(item.id)" class="fa fa-pencil-square-o mx-4"  aria-hidden="true"></i>
+                <i (click)="_delete(item.id)" class="fa fa-trash-o mx-4" aria-hidden="true"></i>
+            </td>
+        </tr>
+    </tbody>
+    <button class="btn btn-outline-primary mt-5"  [routerLink]="['createData']">Create Data</button>
+</table>
+</div>

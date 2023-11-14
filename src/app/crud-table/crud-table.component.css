@@ -1,0 +1,11 @@
+.fa{
+    cursor: pointer;
+    font-size: 20px;
+}
+.fa:active{
+    color: red;
+}
+div
+{
+    margin: 12px 90px;
+}

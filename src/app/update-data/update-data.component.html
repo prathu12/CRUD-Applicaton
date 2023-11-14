@@ -1,0 +1,16 @@
+<form action="" class="container border p-5" (ngSubmit)="subForm(singleData[0].id)" [formGroup]="updateData" >
+    <h2 class="text-center text-dark">Update Data</h2>
+    <div class="form-group">
+        <label for="email">Enter User</label>
+        <input type="name" class="form-control" placeholder="Enter Name" [value]="singleData[0].name" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Enter Username</label>
+        <input type="email" class="form-control" placeholder="Enter Email" formControlName="email" [value]="singleData[0].name">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Enter Course</label>
+        <input type="email" class="form-control" placeholder="Enter Name" formControlName="course" [value]="singleData[0].name">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
